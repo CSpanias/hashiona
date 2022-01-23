@@ -7,11 +7,11 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 
-<title>index slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Hashiona Project - Task 0 - Knowledge Based slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 <!-- General and theme style sheets -->
-<link rel="stylesheet" href="reveal.js/dist/reveal.css">
-<link rel="stylesheet" href="reveal.js/dist/theme/simple.css" id="theme">
+<link rel="stylesheet" href="https://unpkg.com/reveal.js@4.0.2/dist/reveal.css">
+<link rel="stylesheet" href="https://unpkg.com/reveal.js@4.0.2/dist/theme/simple.css" id="theme">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -14399,7 +14399,7 @@ analysis</strong>, <strong>Fisher’s discriminant ratio</strong>, and <strong>R
 <ol>
 <li><p><strong>Original dataset (D)</strong></p>
 <ol>
-<li>Patiens with not much data discarded</li>
+<li>Patients with not much data discarded</li>
 <li>Final dataset contained 247 patients (196 female, 51 men), mean age of 46 years </li>
 </ol>
 </li>
@@ -14419,19 +14419,19 @@ analysis</strong>, <strong>Fisher’s discriminant ratio</strong>, and <strong>R
 <ol>
 <li><p><strong>Dataset 1 (D1)</strong></p>
 <ol>
-<li>Spline Interpolation for eliminating empty cells</li>
-<li>Balancing using Synthetic Minority Oversampling Technique (SMOTE) for mitigating the imbalance problem on D</li>
+<li><strong>Spline Interpolation</strong> for eliminating empty cells</li>
+<li>Balancing using Synthetic Minority Oversampling Technique (<strong>SMOTE</strong>) for mitigating the imbalance problem on D</li>
 </ol>
 </li>
 <li><p><strong>Dataset 2 (D2)</strong></p>
 <ol>
-<li>Discretization (distributing values into intervals and then replacing them with a certain label) on D</li>
+<li><strong>Discretization</strong> (distributing values into intervals and then replacing them with a certain label) on D</li>
 </ol>
 </li>
 </ol>
 <ol>
 <li><strong>Dataset 3 (D3)</strong> <ol>
-<li>Mean Normalization (set values to a common scale) on D</li>
+<li><strong>Mean Normalization</strong> (set values to a common scale) on D</li>
 </ol>
 </li>
 </ol>
@@ -14441,14 +14441,11 @@ analysis</strong>, <strong>Fisher’s discriminant ratio</strong>, and <strong>R
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Model">Model<a class="anchor-link" href="#Model">&#182;</a></h3><ol>
-<li><strong>Data</strong>  <ol>
-<li>27 attributes (selected by an expert), LT4 treatment trend (target) which can take 4 values:<ol>
+<li><strong>Data</strong>: 27 attributes (selected by an expert) &amp; <strong>LT4 treatment trend</strong> (target) which could take 4 values:<ol>
 <li>Increased</li>
 <li>Decreased</li>
 <li>Stable</li>
 <li>Other (e.g. suspended)</li>
-</ol>
-</li>
 </ol>
 </li>
 </ol>
@@ -14473,9 +14470,6 @@ analysis</strong>, <strong>Fisher’s discriminant ratio</strong>, and <strong>R
 <li>CatBoost</li>
 </ol>
 </li>
-</ol>
-<p><em>These approaches use decision trees as weak learners, are not parametric, and do not assume or require data to follow a particular distribution.</em></p>
-<ol>
 <li><p><strong>Decision trees</strong></p>
 <ol>
 <li>Decision Tree</li>
@@ -14533,8 +14527,8 @@ require(
       waitSeconds: 15
     },
     [
-      "reveal.js/dist/reveal.js",
-      "reveal.js/plugin/notes/notes.js"
+      "https://unpkg.com/reveal.js@4.0.2/dist/reveal.js",
+      "https://unpkg.com/reveal.js@4.0.2/plugin/notes/notes.js"
     ],
 
     function(Reveal, RevealNotes){
